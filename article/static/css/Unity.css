@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    font-family: cursive;
+}
+
+.help {
+    position:absolute;
+    padding: 10px 20px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+#header {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content:space-between;
+    height: 90px;
+    background-color: beige;
+}
+
+
+#header_img img{
+    width: 40%;
+    margin-left: 20%;
+}
+#header_link {
+    display: flex;
+    justify-content: right;
+}
+#header_link a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15%;
+    line-height: 100px; 
+}
+#header_link a:hover {
+    color: lime;
+}
+
+#border {
+    margin-left: 15%;
+    margin-right:15%;
+    margin-top:2%;
+    font-size: larger;
+}
+
+#border h2 {
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#footer {
+    margin-top: 2%;
+    background-color: #333;
+    height: 90px;
+    text-align: center;
+}
+#footer p {
+    
+    color: white;
+    font-size: larger;
+    padding-top: 30px;
+}
+
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+	background: #090a0a;
+}
+figure.effect-text-three img {
+	transform: scale(1.1); /*отвечает за отдаление картинки*/
+	transition: opacity 0.35s, transform 0.35s; /*плавность приближения*/
+    width: 817px;
+    height:435px;
+}
+figure.effect-text-three:hover img {
+	opacity: 0.4; /*замыливание картинки*/
+	transform: translate3d(0,0,0);/*отдаление картинки*/
+}
+figure.effect-text-three figcaption {
+	text-align: left;/*текст держится левой стороны */
+}
+figure.effect-text-three h3 {
+	position: relative;/*показывает линию*/
+	overflow: hidden;/*скрывает линию пока курсор не на картинке*/
+	padding: 0.5em 0; /*отступ всерху снизу*/
+    margin-right: 10%;
+    color: rgb(255, 255, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow:0 0 5px black;
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 90%;/*длина линии*/
+	height: 3px;/*толщина линии*/
+	background: #fff;
+	content: '';
+	transition: transform 0.35s; /*плавность появления*/
+	transform: translate3d(-100%,0,0);
+}
+figure.effect-text-three:hover h3::after {
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three p {
+	padding: 1em 0;
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(100%,0,0);
+    margin-right: 10%;
+}
+figure.effect-text-three:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
