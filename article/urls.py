@@ -2,7 +2,13 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.index),  #the path for our index view
+    path('', views.devs),  #the path for our index view
     path('unity', views.unity),
-    path('index', views.index),
+    path('devs', views.devs),
+    path('arduino', views.arduino),
+    path('cSharp', views.cSharp),
+    path('htmlCssJs', views.htmlCssJs),
+    path('mySql', views.mySql),
+    path('php', views.php),
+    
 ]
