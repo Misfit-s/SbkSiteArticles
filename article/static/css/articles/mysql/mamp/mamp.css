@@ -1,0 +1,14 @@
+#article_header {
+    text-align: center;
+}
+
+#content {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#img {
+    width: 40%;
+    padding: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+    <link rel="stylesheet" href="{% static '/css/articles/mysql/mamp/mamp.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <title>Сайтег сбк</title>
+</head>
+<body>
+        <div id="header">
+            <div id="header_img">
+                <a href="devs"><img src="{% static 'img/logo.png' %}"></a>
+            </div>
+            <div id="header_link">
+              <a href="unity" data-tooltip="Создание игры">Unity</a>
+              <a href="arduino" data-tooltip="Создание электронных устройств">Arduino</a>
+              <a href="cSharp" data-tooltip="Создание приложения">C#</a>
+              <a href="htmlCssJs" data-tooltip="Создание сайта">HTML+CSS+JS</a>
+              <a href="mySql" data-tooltip="Создание и подключение базы данных к сайту">MySql</a>
+              <a href="php" data-tooltip="Создание защиты для сайта">PHP</a>
+            </div>
+        </div>
+
+        <div id="article_header">
+            <b><h1>СКАЧИВАНИЕ И УСТАНОВКА MAMP</h1></b>
+        </div>
+        <div id="content">
+            <p>1. Перейти на сайт <a href="https://www.mamp.info/" target="_blank">https://www.mamp.info/</a>.</p>
+            <img id="img" src="{% static 'img/articles/mysql/mamp/mampSite.png' %}">
+            <p>2. Нажать на кнопку “Free Download”.</p>
+            <img id="img" src="{% static 'img/articles/mysql/mamp/mampDownloadButton.png' %}">
+            <p>3. Выбрать версию, подходящую под используемую операционную систему и устройство компьютера. <br>
+                В данной работе будет приведен пример установки MAMP на 64 разрядную версию операционной системы Windows 11.</p>
+            <img id="img" src="{% static 'img/articles/mysql/mamp/mampDownload.png%' %}">
+            <p>4. Загрузить установщик MAMP в нужное место.</p>
+            <img id='img' src="{% static 'img/articles/mysql/mamp/mampSaveLocation.png' %}">
+
+
+        </div>
+
+
+        <div id="footer">
+            <p>© Столичный Бизнес Колледж 1993–2023</p>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{% static 'js/index.js' %}"</script>
+    </body>
+    </html>
