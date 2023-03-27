@@ -22,3 +22,6 @@ def mySql(request):
 def php(request):
      return render(request, 'main/php.html')
 
+def mampSetup(request):
+     return render(request, 'articles/mysql/mampSetup.html')
+

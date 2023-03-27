@@ -10,5 +10,6 @@ urlpatterns = [
     path('htmlCssJs', views.htmlCssJs),
     path('mySql', views.mySql),
     path('php', views.php),
+    path('mampSetup', views.mampSetup),
     
 ]
