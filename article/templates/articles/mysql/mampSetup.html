@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{% static '/css/index.css' %}">
-    <link rel="stylesheet" href="{% static '/css/articles/mysql/mamp/mamp.css' %}">
+    <link rel="stylesheet" href="{% static '/css/articles/mysql/mamp/templateCssMamp.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    <title>MAMP</title>
 </head>
 <body>
@@ -26,35 +26,35 @@
             <b><h1>СКАЧИВАНИЕ И УСТАНОВКА MAMP</h1></b>
         </div>
         <div id="content">
-            <p>1. Перейти на сайт <a href="https://www.mamp.info/" target="_blank">https://www.mamp.info/</a>.</p>
-            <img id="img" src="{% static 'img/articles/mysql/mamp/mampSite.png' %}">
-            <p>2. Нажать на кнопку “Free Download”.</p>
-            <img id="img" src="{% static 'img/articles/mysql/mamp/mampDownloadButton.png' %}">
-            <p>3. Выбрать версию, подходящую под используемую операционную систему и устройство компьютера. <br>
+            <p id='paragrath'>1. Перейти на сайт <a href="https://www.mamp.info/" target="_blank">https://www.mamp.info/</a>.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampSite.png' %}">
+            <p id='paragrath'>2. Нажать на кнопку “Free Download”.</p>
+            <img id="imgSmall" src="{% static 'img/articles/mysql/mamp/mampDownloadButton.png' %}">
+            <p id='paragrath'>3. Выбрать версию, подходящую под используемую операционную систему и устройство компьютера. <br>
                 В данной работе будет приведен пример установки MAMP на 64 разрядную версию операционной системы Windows 11.</p>
-            <img id="img" src="{% static 'img/articles/mysql/mamp/mampDownload.png' %}">
-            <p>4. Загрузить установщик MAMP в нужное место.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampSaveLocation.png' %}">
-            <p>5. Запустить установщик.</p>
-            <img id='imgSetup' src="{% static 'img/articles/mysql/mamp/mampSetupFile.png' %}">
-            <p>6. После запуска нажать на кнопку “Next >”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampSetupGreetingsPage.png' %}">
-            <p>7. Снять галочку с опции “MAMP PRO”, так как это установка платной версии программного обеспечения, после чего нажать на кнопку “Next >”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampProDisablePage.png' %}">
-            <p>8. Прочитать и принять лицензионное соглашение, посредством нажатия на кнопку “I Accept the agreement”, нажать на кнопку “Next >”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampLicenseAgreetment.png' %}">
-            <p>9. Указать нужный путь установки программного обеспечения, нажать на кнопку “Next >”. Желательно оставить стандартный путь.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampInstallLocation.png' %}">
-            <p>10. Указать путь, по которому будет находиться ярлык MAMP в меню кнопки “Пуск”, нажать на кнопку “Next >”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampStartMenuLocation.png' %}">
-            <p>11. Указать, нужно ли создавать ярлык на рабочем столе, нажать на кнопку “Next >”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampDesktopShortCut.png' %}">
-            <p>12. Удостовериться в правильности указанных параметров и нажать на кнопку “Install”.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampSummary.png' %}">
-            <p>13. Дождаться завершения установки.</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampInstallProcess.png' %}">
-            <p>14. Нажать на кнопку “Finish”. Установка завершена!</p>
-            <img id='img' src="{% static 'img/articles/mysql/mamp/mampFin.png' %}">
+            <img id="imgBig" src="{% static 'img/articles/mysql/mamp/mampDownload.png' %}">
+            <p id='paragrath'>4. Загрузить установщик MAMP в нужное место.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampSaveLocation.png' %}">
+            <p id='paragrath'>5. Запустить установщик.</p>
+            <img id='imgSmall' src="{% static 'img/articles/mysql/mamp/mampSetupFile.png' %}">
+            <p id='paragrath'>6. После запуска нажать на кнопку “Next >”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampSetupGreetingsPage.png' %}">
+            <p id='paragrath'>7. Снять галочку с опции “MAMP PRO”, так как это установка платной версии программного обеспечения, после чего нажать на кнопку “Next >”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampProDisablePage.png' %}">
+            <p id='paragrath'>8. Прочитать и принять лицензионное соглашение, посредством нажатия на кнопку “I Accept the agreement”, нажать на кнопку “Next >”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampLicenseAgreetment.png' %}">
+            <p id='paragrath'>9. Указать нужный путь установки программного обеспечения, нажать на кнопку “Next >”. Желательно оставить стандартный путь.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampInstallLocation.png' %}">
+            <p id='paragrath'>10. Указать путь, по которому будет находиться ярлык MAMP в меню кнопки “Пуск”, нажать на кнопку “Next >”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampStartMenuLocation.png' %}">
+            <p id='paragrath'>11. Указать, нужно ли создавать ярлык на рабочем столе, нажать на кнопку “Next >”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampDesktopShortCut.png' %}">
+            <p id='paragrath'>12. Удостовериться в правильности указанных параметров и нажать на кнопку “Install”.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampSummary.png' %}">
+            <p id='paragrath'>13. Дождаться завершения установки.</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampInstallProcess.png' %}">
+            <p id='paragrath'>14. Нажать на кнопку “Finish”. Установка завершена!</p>
+            <img id='imgBig' src="{% static 'img/articles/mysql/mamp/mampFin.png' %}">
         </div>
 
 

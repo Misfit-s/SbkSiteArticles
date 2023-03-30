@@ -8,12 +8,19 @@
     padding: 10px;
 }
 
-#img {
-    width: 40%;
+#imgBig {
+    height: 430px;
+    width: 540px;
+    padding: 10px;
+
+}
+
+#imgSmall {
+    width: 20%;
     padding: 10px;
 }
 
-#imgSetup {
-    width: 20%;
-    padding: 10px;
+#paragrath {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
